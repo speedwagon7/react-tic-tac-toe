@@ -8,6 +8,7 @@ const app = express();
 
 
 //have node serve the files for our built react app
+const path = require('path');
 app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 
